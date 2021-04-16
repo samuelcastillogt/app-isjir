@@ -45,15 +45,26 @@ header img{
     background-color: snow;
     color: #130f40;
 }
+.formulario{
+    background-color: snow;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
 .item-form{
     display: flex;
     align-items: center;
-    color: snow;
+    color: black;
+    margin: 10px;
 }
 input{
     border-radius: 6px;
     padding: 10px;
     background-color: snow;
+    margin: 10px;
 }
 @media only screen and (max-width: 700px) {
     .container1{

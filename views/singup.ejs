@@ -12,7 +12,7 @@
         <img src="/icons/points.png" alt="">
     </header>
     <section>
-        <form action="">
+        <form action="" class="formulario">
             <div class="item-form">
                 <label for="nombre">Nombre del Negocio</label>
                 <input type="text" class="input" id="nombre" >
@@ -30,7 +30,8 @@
             const valor = document.getElementById("nombre").value
         if(valor == null || valor.length == 0){
             alert("Error necesita agregar un nombre")
-            document.getElementById("nombre").style.background = "rgba(255, 40, 0,0.3)"
+            document.getElementById("nombre").style.background = "rgba(255, 0, 0,0.6)"
+            document.getElementById("nombre").style.boxShadow = "3px 3px 20px 5px #FF0D21"
             document.getElementById("nombre").style.border = "red"
             
         }else{
