@@ -11,5 +11,8 @@ app.listen(3000, ()=>{
     console.log("hola")
 })
 app.get("/", (req, res)=>{
-    res.send("Hola")
+    res.render("home")
+})
+app.get("/singup", (req, res)=>{
+    res.render("singup")
 })
