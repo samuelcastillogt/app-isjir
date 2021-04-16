@@ -45,12 +45,25 @@ header img{
     background-color: snow;
     color: #130f40;
 }
+.item-form{
+    display: flex;
+    align-items: center;
+    color: snow;
+}
+input{
+    border-radius: 6px;
+    padding: 10px;
+    background-color: snow;
+}
 @media only screen and (max-width: 700px) {
     .container1{
         width: 250px;
     }
     .btn{
         padding: 20px;
+    }
+    .item-form{
+      flex-direction: column;
     }
     /* .buton{
         margin: 20px;

@@ -14,10 +14,30 @@
     <section>
         <form action="">
             <div class="item-form">
-                <input type="text" class="input" >
+                <label for="nombre">Nombre del Negocio</label>
+                <input type="text" class="input" id="nombre" >
+            </div>
+            <div class="item-form">
+                <label for="direccion">Direccion</label>
+                <input type="email" class="input" id="direccion" >
             </div>
         </form>
+        <button id="click">clcik</button>
     </section>
-    
+    <script>
+        
+        document.getElementById("click").addEventListener("click", ()=>{
+            const valor = document.getElementById("nombre").value
+        if(valor == null || valor.length == 0){
+            alert("Error necesita agregar un nombre")
+            document.getElementById("nombre").style.background = "rgba(255, 40, 0,0.3)"
+            document.getElementById("nombre").style.border = "red"
+            
+        }else{
+            alert(valor)
+            document.getElementById("nombre").style.background= "green"
+        }
+        })
+    </script>
 </body>
 </html>
