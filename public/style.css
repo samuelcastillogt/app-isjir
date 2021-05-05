@@ -11,6 +11,7 @@ body{
 }
 header{
     padding: 20px;
+    margin: 0;
 }
 header img{
     width: 90px;
@@ -45,6 +46,12 @@ header img{
     background-color: snow;
     color: #130f40;
 }
+.btn-fun{
+    background: green;
+    color: white;
+    width: 80%;
+}
+
 .formulario{
     background-color: snow;
     padding: 20px;
@@ -61,10 +68,18 @@ header img{
     margin: 10px;
 }
 input{
-    border-radius: 6px;
-    padding: 10px;
+    border-radius: 20px;
+    padding: 15px;
     background-color: snow;
     margin: 10px;
+}
+input:focus{
+   border: 1px solid green;
+}
+.header{
+    background-color: green;
+    width: 100vw;
+    padding: 20px;
 }
 @media only screen and (max-width: 700px) {
     .container1{

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    Este es el link jajajaja
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
+    <script>
+        var firebaseConfig = {
+    apiKey: "AIzaSyBTlIW_1NAeMeSDOdCc4AICtGxoYbaUyuw",
+    authDomain: "directorio-bc73c.firebaseapp.com",
+    databaseURL: "https://directorio-bc73c.firebaseio.com",
+    projectId: "directorio-bc73c",
+    storageBucket: "directorio-bc73c.appspot.com",
+    messagingSenderId: "584037980083",
+    appId: "1:584037980083:web:3d1a9f630024b3c3565dc6",
+    measurementId: "G-PL8N063SXF"
+  }; 
+  firebase.initializeApp(firebaseConfig);
+  var user = firebase.auth().currentUser;
+  firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    console.log(user)
+  } else {
+    console.log("eleekekek")
+  }
+});
+    </script>
+</body>
+</html>
